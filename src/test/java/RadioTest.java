@@ -222,5 +222,26 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void setVolume101() {
+        Radio radio = new Radio();
+        radio.setVolume(101);
+        int expected = 100;
+        int actual = radio.getVolume();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void setVolume1() {
+        Radio radio = new Radio();
+        radio.setVolume(-1);
+        int expected = 0;
+        int actual = radio.getVolume();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+
 
 }

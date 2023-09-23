@@ -42,7 +42,7 @@ public class Radio {
             return;
         }
         if (volume > 100) {
-            return;
+            volume = 100;
         }
         this.volume = volume;
     }
